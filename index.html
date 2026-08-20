@@ -20,14 +20,14 @@
     <meta name="googlebot" content="index, follow">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://gatewaytoursimpvtltd.edgeone.app/">
+    <link rel="canonical" href="https://notgamersyt5454-sys.github.io/gateway-tourism/">
     
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="Gateway Tourism Pvt. Ltd | Premium Hajj, Umrah & Travel Services">
     <meta property="og:description" content="Premium Hajj, Umrah & Travel Services - Visa processing, tour packages, and pilgrimage journeys worldwide.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gatewaytoursimpvtltd.edgeone.app/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200">
+    <meta property="og:url" content="https://notgamersyt5454-sys.github.io/gateway-tourism/">
+    <meta property="og:image" content="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/qftrscblekzv6eiuoga7">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Gateway Tourism Pvt. Ltd">
@@ -37,10 +37,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gateway Tourism Pvt. Ltd | Premium Hajj, Umrah & Travel Services">
     <meta name="twitter:description" content="Premium Hajj, Umrah & Travel Services - Visa processing, tour packages, and pilgrimage journeys worldwide.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/qftrscblekzv6eiuoga7">
     
-    <!-- Favicon (Emoji-based, no upload needed) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕋</text></svg>">
+    <!-- Favicon - Your Logo -->
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/qftrscblekzv6eiuoga7">
+    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/qftrscblekzv6eiuoga7">
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/qftrscblekzv6eiuoga7">
     
     <title>Gateway Tourism Pvt. Ltd | Premium Hajj, Umrah & Travel Services</title>
     
@@ -65,8 +67,10 @@
         .btn-green:hover{background:#4caf50!important;color:#fff!important}
         nav{background:rgba(10,10,10,0.92);backdrop-filter:blur(15px);border-bottom:1px solid rgba(240,185,11,0.25);position:sticky;top:0;z-index:100;padding:14px 0}
         .nav-container{display:flex;justify-content:space-between;align-items:center}
-        .logo{font-size:1.3rem;font-weight:700;color:#fff;cursor:pointer}
-        .logo span{color:#f0b90b}
+        .logo{display:flex;align-items:center;gap:10px;cursor:pointer}
+        .logo img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid #f0b90b}
+        .logo-text{font-size:1.2rem;font-weight:700;color:#fff}
+        .logo-text span{color:#f0b90b}
         .nav-links{display:flex;gap:25px;align-items:center}
         .nav-links a{color:#ddd;text-decoration:none;cursor:pointer;font-weight:500;font-size:0.9rem;display:flex;align-items:center;gap:5px}
         .nav-links a i{color:#f0b90b}
@@ -121,7 +125,7 @@
         .loading-spinner{display:inline-block;width:16px;height:16px;border:2px solid #ccc;border-top-color:#f0b90b;border-radius:50%;animation:spin 0.7s linear infinite}
         @keyframes spin{to{transform:rotate(360deg)}}
         footer{background:#0a0a0a;padding:30px 0;text-align:center;color:#888}
-        @media(max-width:768px){.nav-links{display:none;width:100%;flex-direction:column;gap:15px;margin-top:15px}.nav-links.active{display:flex}.hamburger{display:block}.home-gallery{grid-template-columns:repeat(2,1fr)}.home-hero h1{font-size:1.9rem}}
+        @media(max-width:768px){.nav-links{display:none;width:100%;flex-direction:column;gap:15px;margin-top:15px}.nav-links.active{display:flex}.hamburger{display:block}.home-gallery{grid-template-columns:repeat(2,1fr)}.home-hero h1{font-size:1.9rem}.logo-text{font-size:1rem}.logo img{width:32px;height:32px}}
     </style>
 </head>
 <body>
@@ -132,7 +136,10 @@
     
     <nav>
         <div class="container nav-container">
-            <div class="logo" onclick="showPage('mainPage')">Gateway<span> Tourism Pvt. Ltd</span></div>
+            <div class="logo" onclick="showPage('mainPage')">
+                <img src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/qftrscblekzv6eiuoga7" alt="Gateway Tourism Logo" onerror="this.style.display='none'">
+                <span class="logo-text">Gateway <span>Tourism Pvt. Ltd</span></span>
+            </div>
             <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
             <div class="nav-links" id="navLinks">
                 <a href="#" onclick="showPage('mainPage');return false;"><i class="fas fa-globe"></i> Home</a>
