@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PMM7VDNH');</script>
+    <!-- End Google Tag Manager -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Gateway Tourism Pvt. Ltd - Premium Hajj, Umrah, travel packages, and worldwide visa services. Your trusted travel partner since 2010.">
+    <meta name="keywords" content="Gateway Tourism, travel agency, Hajj packages, Umrah packages, visa services, tour packages, travel, pilgrimage">
+    <meta name="author" content="Gateway Tourism Pvt. Ltd">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gatewaytoursimpvtltd.edgeone.app/">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Gateway Tourism Pvt. Ltd | Premium Hajj, Umrah & Travel Services">
+    <meta property="og:description" content="Premium Hajj, Umrah & Travel Services - Visa processing, tour packages, and pilgrimage journeys worldwide.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gatewaytoursimpvtltd.edgeone.app/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Gateway Tourism Pvt. Ltd">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gateway Tourism Pvt. Ltd | Premium Hajj, Umrah & Travel Services">
+    <meta name="twitter:description" content="Premium Hajj, Umrah & Travel Services - Visa processing, tour packages, and pilgrimage journeys worldwide.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200">
+    
+    <!-- Favicon (Emoji-based, no upload needed) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕋</text></svg>">
+    
+    <title>Gateway Tourism Pvt. Ltd | Premium Hajj, Umrah & Travel Services</title>
+    
+    <!-- Stylesheets & Scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Segoe UI',system-ui,sans-serif;background:#0a0a0a;color:#1a1a1a;line-height:1.5}
+        .container{max-width:1280px;margin:0 auto;padding:0 20px}
+        .btn-gold{background:linear-gradient(145deg,#f0b90b,#c9a20c);border:none;color:#000;font-weight:700;padding:14px 32px;border-radius:50px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-size:0.95rem;text-transform:uppercase;transition:0.3s}
+        .btn-gold:hover{background:#fdd835;transform:translateY(-2px);box-shadow:0 8px 25px rgba(240,185,11,0.4)}
+        .btn-gold:disabled{opacity:0.5;cursor:not-allowed}
+        .btn-outline-gold{background:transparent;border:2px solid #f0b90b;color:#1a1a1a;font-weight:600;padding:10px 20px;border-radius:50px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:0.9rem;transition:0.3s}
+        .btn-outline-gold:hover{background:#f0b90b}
+        .btn-danger{border-color:#ff4d4d!important;color:#ff4d4d!important}
+        .btn-danger:hover{background:#ff4d4d!important;color:#fff!important}
+        .btn-green{border-color:#4caf50!important;color:#4caf50!important}
+        .btn-green:hover{background:#4caf50!important;color:#fff!important}
+        nav{background:rgba(10,10,10,0.92);backdrop-filter:blur(15px);border-bottom:1px solid rgba(240,185,11,0.25);position:sticky;top:0;z-index:100;padding:14px 0}
+        .nav-container{display:flex;justify-content:space-between;align-items:center}
+        .logo{font-size:1.3rem;font-weight:700;color:#fff;cursor:pointer}
+        .logo span{color:#f0b90b}
+        .nav-links{display:flex;gap:25px;align-items:center}
+        .nav-links a{color:#ddd;text-decoration:none;cursor:pointer;font-weight:500;font-size:0.9rem;display:flex;align-items:center;gap:5px}
+        .nav-links a i{color:#f0b90b}
+        .hamburger{display:none;font-size:1.5rem;color:#f0b90b;cursor:pointer}
+        section{padding:50px 0}
+        .section-title{font-size:2rem;font-weight:700;color:#1a1a1a;margin-bottom:8px}
+        .section-title i{color:#c9a20c;margin-right:8px}
+        .gold-text{color:#c9a20c}
+        .home-hero{background:linear-gradient(180deg,#fff,#f8f9fa);padding:60px 0 50px;text-align:center}
+        .home-hero h1{font-size:2.5rem;font-weight:800;color:#1a1a1a}
+        .home-hero p{color:#555;max-width:600px;margin:12px auto}
+        .home-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px;max-width:1050px;margin-left:auto;margin-right:auto}
+        .home-gallery img{width:100%;height:165px;object-fit:cover;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
+        .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:25px}
+        .feature-box{background:#fff;padding:28px 20px;border-radius:16px;text-align:center;box-shadow:0 4px 18px rgba(0,0,0,0.04);border:1px solid #eee}
+        .feature-box i{font-size:2.3rem;color:#c9a20c;margin-bottom:10px}
+        .feature-box h4{color:#1a1a1a;font-size:1.05rem}
+        .feature-box p{color:#666;font-size:0.88rem}
+        .hajj-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:22px}
+        .hajj-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 25px rgba(0,0,0,0.06);border:1px solid #eee}
+        .hajj-card img{width:100%;height:195px;object-fit:cover}
+        .hajj-card .hajj-content{padding:20px;text-align:center}
+        .hajj-card h3{color:#1a1a1a;margin:6px 0}
+        .hajj-badge{background:linear-gradient(135deg,#c9a20c,#f0b90b);color:#000;padding:5px 15px;border-radius:20px;font-weight:700;font-size:0.85rem;display:inline-block}
+        .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:22px}
+        .package-card{background:#fff;border-radius:16px;overflow:hidden;border:1px solid #e0e0e0;box-shadow:0 4px 16px rgba(0,0,0,0.04)}
+        .package-card img{width:100%;height:175px;object-fit:cover}
+        .card-content{padding:16px}
+        .card-content h3{color:#1a1a1a;font-size:1.15rem}
+        .card-content p{color:#666;font-size:0.88rem}
+        .price{font-weight:700;font-size:1.2rem;color:#c9a20c}
+        input,textarea,select{width:100%;padding:12px 15px;background:#fff;border:1px solid #ddd;border-radius:10px;color:#1a1a1a;font-size:0.9rem;font-family:inherit}
+        input:focus,textarea:focus,select:focus{border-color:#f0b90b;outline:none}
+        .form-group{margin-bottom:14px}
+        .form-group label{display:block;color:#333;font-weight:500;margin-bottom:4px;font-size:0.9rem}
+        .form-row{display:flex;gap:14px;flex-wrap:wrap}
+        .form-row .form-group{flex:1}
+        .contact-info-card{background:#fff;padding:25px;border-radius:16px;border-left:4px solid #f0b90b;box-shadow:0 4px 16px rgba(0,0,0,0.04)}
+        .page{display:none}
+        .page.active{display:block}
+        .login-page{min-height:80vh;display:flex;align-items:center;justify-content:center;background:#0a0a0a}
+        .login-card{background:#1a1a1a;padding:40px;border-radius:24px;max-width:420px;width:100%;border:1px solid #f0b90b}
+        .login-card h2{color:#f0b90b;text-align:center;font-size:1.7rem}
+        .login-card label{color:#ccc;font-weight:500;font-size:0.9rem}
+        .login-card input{background:#1e1e1e;border:1px solid #333;color:#fff;padding:12px 15px}
+        .admin-white-bg{background:#f5f6f8!important;min-height:100vh;padding:30px 0}
+        .admin-panel-white{background:#fff;border-radius:20px;padding:30px;box-shadow:0 8px 35px rgba(0,0,0,0.06)}
+        .admin-section-white{background:#fafbfc;border:1px solid #e8eaed;border-radius:14px;padding:20px;margin-bottom:18px}
+        .admin-section-white h3{color:#1a1a1a;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:1.05rem}
+        .toggle-arrow{transition:0.3s;color:#666}
+        .toggle-arrow.rotated{transform:rotate(180deg)}
+        .loading-spinner{display:inline-block;width:16px;height:16px;border:2px solid #ccc;border-top-color:#f0b90b;border-radius:50%;animation:spin 0.7s linear infinite}
+        @keyframes spin{to{transform:rotate(360deg)}}
+        footer{background:#0a0a0a;padding:30px 0;text-align:center;color:#888}
+        @media(max-width:768px){.nav-links{display:none;width:100%;flex-direction:column;gap:15px;margin-top:15px}.nav-links.active{display:flex}.hamburger{display:block}.home-gallery{grid-template-columns:repeat(2,1fr)}.home-hero h1{font-size:1.9rem}}
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMM7VDNH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <nav>
+        <div class="container nav-container">
+            <div class="logo" onclick="showPage('mainPage')">Gateway<span> Tourism Pvt. Ltd</span></div>
+            <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+            <div class="nav-links" id="navLinks">
+                <a href="#" onclick="showPage('mainPage');return false;"><i class="fas fa-globe"></i> Home</a>
+                <a href="#" onclick="showPage('contactPage');return false;"><i class="fas fa-phone-alt"></i> Contact Us</a>
+                <a href="#" onclick="showPage('loginPage');return false;" id="loginNavLink"><i class="fas fa-lock"></i> Owner Login</a>
+                <a href="#" onclick="showPage('adminDashboard');return false;" id="dashboardNavLink" style="display:none;"><i class="fas fa-crown"></i> Dashboard</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="mainPage" class="page active" style="background:#fff;">
+            <div class="home-hero">
+                <h1>Explore the <span class="gold-text">World</span> With Us</h1>
+                <p>Premium travel packages, worldwide visa services, Hajj & Umrah journeys. Your trusted travel partner since 2010.</p>
+                <button class="btn-gold" onclick="document.getElementById('packages').scrollIntoView({behavior:'auto'})"><i class="fas fa-compass"></i> Explore Packages</button>
+                <div class="home-gallery">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400" alt="Travel Destinations" loading="lazy" onerror="this.style.opacity='0'">
+                    <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=400" alt="Makkah" loading="lazy" onerror="this.style.opacity='0'">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400" alt="City Tours" loading="lazy" onerror="this.style.opacity='0'">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Beach Holidays" loading="lazy" onerror="this.style.opacity='0'">
+                </div>
+            </div>
+            <section style="background:#fff;">
+                <div class="container">
+                    <h2 class="section-title"><i class="fas fa-star"></i> Why Choose Gateway Tourism</h2>
+                    <div class="features-grid">
+                        <div class="feature-box"><i class="fas fa-passport"></i><h4>Visa Experts</h4><p>Fast & reliable visa processing for all countries</p></div>
+                        <div class="feature-box"><i class="fas fa-hotel"></i><h4>Premium Hotels</h4><p>Handpicked 4 & 5-star accommodations worldwide</p></div>
+                        <div class="feature-box"><i class="fas fa-headset"></i><h4>24/7 Support</h4><p>Round-the-clock customer assistance</p></div>
+                        <div class="feature-box"><i class="fas fa-shield-alt"></i><h4>Trusted Agency</h4><p>15+ years in travel industry</p></div>
+                        <div class="feature-box"><i class="fas fa-plane-departure"></i><h4>Best Prices</h4><p>Competitive rates guaranteed</p></div>
+                    </div>
+                </div>
+            </section>
+            <section style="background:#f9fafb;">
+                <div class="container">
+                    <h2 class="section-title"><i class="fas fa-globe-asia"></i> Featured Packages</h2>
+                    <div class="hajj-cards">
+                        <div class="hajj-card"><img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=600" loading="lazy" onerror="this.style.opacity='0'"><div class="hajj-content"><span class="hajj-badge">🕋 Hajj & Umrah</span><h3>Sacred Pilgrimage 2025</h3><p>Premium packages with 5-star hotels near Haram.</p></div></div>
+                        <div class="hajj-card"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" loading="lazy" onerror="this.style.opacity='0'"><div class="hajj-content"><span class="hajj-badge">🌍 World Tours</span><h3>International Travel</h3><p>Explore Europe, Asia & Middle East.</p></div></div>
+                        <div class="hajj-card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" loading="lazy" onerror="this.style.opacity='0'"><div class="hajj-content"><span class="hajj-badge">🏖️ Luxury Escapes</span><h3>Beach & Resort Holidays</h3><p>All-inclusive resort vacations.</p></div></div>
+                    </div>
+                </div>
+            </section>
+            <section id="packages" style="background:#fff;">
+                <div class="container">
+                    <h2 class="section-title"><i class="fas fa-suitcase"></i> All Tour Packages</h2>
+                    <div class="card-grid" id="packageContainer"></div>
+                </div>
+            </section>
+            <section style="background:#f9fafb;">
+                <div class="container">
+                    <h2 class="section-title"><i class="fas fa-envelope"></i> Contact Gateway Tourism</h2>
+                    <div style="display:flex;flex-wrap:wrap;gap:30px;margin-top:20px;">
+                        <div style="flex:1;min-width:260px;"><div class="contact-info-card" id="homeContactInfo"></div></div>
+                        <div style="flex:1;min-width:260px;">
+                            <form id="contactForm" style="background:#fff;padding:22px;border-radius:14px;box-shadow:0 4px 16px rgba(0,0,0,0.04);">
+                                <h4 style="color:#1a1a1a;margin-bottom:12px;">Send Inquiry</h4>
+                                <div class="form-group"><input type="text" id="contactName" placeholder="Your Name" required></div>
+                                <div class="form-group"><input type="email" id="contactEmail" placeholder="Your Email" required></div>
+                                <div class="form-group"><textarea id="contactMessage" rows="3" placeholder="Your Message"></textarea></div>
+                                <button type="submit" class="btn-gold"><i class="fas fa-paper-plane"></i> Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="contactPage" class="page" style="background:#fff;min-height:80vh;">
+            <section>
+                <div class="container">
+                    <h2 class="section-title"><i class="fas fa-address-book"></i> Contact Gateway Tourism</h2>
+                    <p style="color:#555;margin-bottom:20px;">Get in touch for any travel inquiries, visa assistance, or package bookings.</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:30px;">
+                        <div style="flex:1;min-width:260px;"><div class="contact-info-card" id="pageContactInfo"></div></div>
+                        <div style="flex:1;min-width:260px;">
+                            <form id="contactPageForm" style="background:#fff;padding:22px;border-radius:14px;box-shadow:0 4px 16px rgba(0,0,0,0.04);">
+                                <h4 style="color:#1a1a1a;margin-bottom:12px;">Send Inquiry</h4>
+                                <div class="form-group"><input type="text" id="contactPageName" placeholder="Your Name" required></div>
+                                <div class="form-group"><input type="email" id="contactPageEmail" placeholder="Your Email" required></div>
+                                <div class="form-group"><textarea id="contactPageMessage" rows="3" placeholder="Your Message"></textarea></div>
+                                <button type="submit" class="btn-gold"><i class="fas fa-paper-plane"></i> Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="loginPage" class="page">
+            <div class="login-page">
+                <div class="login-card">
+                    <h2><i class="fas fa-shield-alt"></i> Owner Login</h2>
+                    <p style="color:#888;text-align:center;margin:8px 0 22px;font-size:0.9rem;">Secure Firebase Authentication</p>
+                    <div id="loginError" style="color:#ff4d4d;text-align:center;margin-bottom:12px;display:none;"></div>
+                    <div class="form-group"><label>Email</label><input type="email" id="adminEmail" style="background:#1e1e1e;border:1px solid #333;color:#fff;" placeholder="admin@gatewaytourism.com"></div>
+                    <div class="form-group"><label>Password</label><input type="password" id="adminPassword" style="background:#1e1e1e;border:1px solid #333;color:#fff;"></div>
+                    <button id="loginSubmitBtn" class="btn-gold" style="width:100%;">Access Dashboard</button>
+                </div>
+            </div>
+        </div>
+        <div id="adminDashboard" class="page admin-white-bg">
+            <div class="container">
+                <div class="admin-panel-white">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;">
+                        <h2 style="color:#1a1a1a;"><i class="fas fa-crown gold-text"></i> Owner Dashboard</h2>
+                        <button id="logoutAdminBtn" class="btn-outline-gold btn-danger">Logout</button>
+                    </div>
+                    <div class="admin-section-white">
+                        <h3 onclick="toggleSection('passwordSection')">Change Password <i class="fas fa-chevron-down toggle-arrow" id="arrow-passwordSection"></i></h3>
+                        <div id="body-passwordSection">
+                            <div class="form-group"><label>Current Password</label><input type="password" id="currentPassword"></div>
+                            <div class="form-row">
+                                <div class="form-group"><label>New Password</label><input type="password" id="newPassword"></div>
+                                <div class="form-group"><label>Confirm</label><input type="password" id="confirmNewPassword"></div>
+                            </div>
+                            <button id="changePasswordBtn" class="btn-outline-gold btn-green">Update Password</button>
+                            <p id="passwordStatus" style="color:#4caf50;"></p>
+                        </div>
+                    </div>
+                    <div class="admin-section-white">
+                        <h3 onclick="toggleSection('emailSection')">Inquiry Email <i class="fas fa-chevron-down toggle-arrow" id="arrow-emailSection"></i></h3>
+                        <div id="body-emailSection">
+                            <p style="color:#666;font-size:0.85rem;">Where customer form inquiries are sent.</p>
+                            <div class="form-group"><label>Recipient Email</label><input type="email" id="inquiryEmail"></div>
+                            <button id="saveInquiryEmailBtn" class="btn-outline-gold btn-green">Save Email</button>
+                            <p id="inquiryEmailStatus" style="color:#4caf50;"></p>
+                        </div>
+                    </div>
+                    <div class="admin-section-white">
+                        <h3 onclick="toggleSection('contactSection')">Manage Contacts <i class="fas fa-chevron-down toggle-arrow" id="arrow-contactSection"></i></h3>
+                        <div id="body-contactSection">
+                            <div style="background:#f0f2f5;padding:16px;border-radius:12px;margin-bottom:16px;">
+                                <h4 id="contactFormTitle">Add Contact</h4>
+                                <div class="form-row">
+                                    <div class="form-group"><label>Type</label><select id="contactType"><option value="email">📧 Email</option><option value="phone">📞 Phone</option><option value="whatsapp">💬 WhatsApp</option></select></div>
+                                    <div class="form-group"><label>Label</label><input type="text" id="contactLabel" placeholder="e.g., Support"></div>
+                                </div>
+                                <div class="form-group"><label>Value</label><input type="text" id="contactValue" placeholder="e.g., info@domain.com"></div>
+                                <button id="saveContactBtn" class="btn-gold">Save Contact</button>
+                                <button id="cancelContactBtn" class="btn-outline-gold" style="display:none;">Cancel</button>
+                            </div>
+                            <h4>Current Contacts</h4>
+                            <div id="adminContactList"></div>
+                        </div>
+                    </div>
+                    <div class="admin-section-white">
+                        <h3 onclick="toggleSection('packageSection')">Manage Packages <i class="fas fa-chevron-down toggle-arrow" id="arrow-packageSection"></i></h3>
+                        <div id="body-packageSection">
+                            <button id="showAddPackageForm" class="btn-outline-gold">Add Package</button>
+                            <div id="addPackageForm" style="display:none;background:#f0f2f5;padding:16px;border-radius:12px;margin:16px 0;">
+                                <h4 id="formTitle">Add Package</h4>
+                                <div class="form-row">
+                                    <div class="form-group"><label>Title</label><input type="text" id="pkgTitle"></div>
+                                    <div class="form-group"><label>Price</label><input type="text" id="pkgPrice"></div>
+                                </div>
+                                <div class="form-group"><label>Image URL</label><input type="url" id="pkgImage"></div>
+                                <div class="form-group"><label>Description</label><textarea id="pkgDesc" rows="2"></textarea></div>
+                                <button id="savePackageBtn" class="btn-gold">Save Package</button>
+                                <button id="cancelEditBtn" class="btn-outline-gold" style="display:none;">Cancel</button>
+                            </div>
+                            <h4>Current Packages</h4>
+                            <div id="adminPackageList" class="card-grid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social" style="margin-bottom:15px;">
+                <i class="fab fa-instagram" style="font-size:1.4rem;margin:0 10px;color:#aaa;cursor:pointer;"></i>
+                <i class="fab fa-facebook" style="font-size:1.4rem;margin:0 10px;color:#aaa;cursor:pointer;"></i>
+                <i class="fab fa-twitter" style="font-size:1.4rem;margin:0 10px;color:#aaa;cursor:pointer;"></i>
+                <i class="fab fa-linkedin" style="font-size:1.4rem;margin:0 10px;color:#aaa;cursor:pointer;"></i>
+            </div>
+            <p>© 2025 Gateway Tourism Pvt. Ltd. Premium Travel, Hajj, Umrah & Visa Services. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        firebase.initializeApp({
+            apiKey: "AIzaSyB-k7WfbCWAz_D4AkB3a72fCTFX6h--JbI",
+            authDomain: "gateway-tourism-ptv.firebaseapp.com",
+            databaseURL: "https://gateway-tourism-ptv-default-rtdb.firebaseio.com",
+            projectId: "gateway-tourism-ptv",
+            storageBucket: "gateway-tourism-ptv.firebasestorage.app",
+            messagingSenderId: "768503736913",
+            appId: "1:768503736913:web:f327c8a20c09f1c3b16670"
+        });
+        const auth = firebase.auth(),
+            db = firebase.database();
+        let pkgs = [],
+            cinfo = [],
+            iqEmail = 'info@gatewaytourism.com';
+        const ADMIN_UID = "7Dr7VUesgZN8uGczTOcey9shgmP2";
+
+        function esc(s) { if (!s) return ''; return String(s).replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m]); }
+        function vEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+        function rPC() { const c = document.getElementById('packageContainer'); if (c) c.innerHTML = pkgs.map(p => `<div class="package-card"><img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" onerror="this.style.opacity='0'"><div class="card-content"><h3>${esc(p.title)}</h3><p>${esc(p.desc||'')}</p><div class="price">${esc(p.price||'')}</div></div></div>`).join('') || '<p style="padding:20px;color:#888;text-align:center;">Loading packages...</p>'; }
+        function rAP() { const c = document.getElementById('adminPackageList'); if (c) c.innerHTML = pkgs.map(p => `<div class="package-card" style="background:#fafbfc;"><img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" onerror="this.style.opacity='0'"><div class="card-content"><h3>${esc(p.title)}</h3><p>${esc(p.desc||'')}</p><div class="price">${esc(p.price||'')}</div><div style="display:flex;gap:6px;margin-top:8px;"><button class="btn-outline-gold" onclick="editP('${p.key}')" style="padding:5px 12px;">✏️</button><button class="btn-outline-gold btn-danger" onclick="delP('${p.key}')" style="padding:5px 12px;">🗑️</button></div></div></div>`).join('') || '<p style="padding:20px;color:#888;text-align:center;">No packages yet.</p>'; }
+        function rCI() { const h = cinfo.map(c => `<p style="margin-bottom:10px;"><i class="fas ${esc(c.icon)}" style="color:#c9a20c;margin-right:8px;"></i><strong>${esc(c.label)}:</strong><br>${esc(c.value)}</p>`).join('') || '<p style="color:#888;">No contacts yet.</p>'; document.getElementById('homeContactInfo').innerHTML = h;
+            document.getElementById('pageContactInfo').innerHTML = h; }
+        function rAC() { const c = document.getElementById('adminContactList'); if (c) c.innerHTML = cinfo.map(ci => `<div style="display:flex;align-items:center;gap:10px;padding:10px;background:#fff;border-radius:10px;margin-bottom:6px;border:1px solid #eee;"><i class="fas ${esc(ci.icon)}" style="color:#c9a20c;"></i><div style="flex:1;"><strong>${esc(ci.label)}</strong><br><span style="font-size:0.85rem;">${esc(ci.value)}</span></div><div style="display:flex;gap:5px;"><button class="btn-outline-gold" onclick="editC('${ci.key}')" style="padding:4px 10px;">✏️</button><button class="btn-outline-gold btn-danger" onclick="delC('${ci.key}')" style="padding:4px 10px;">🗑️</button></div></div>`).join('') || '<p style="color:#888;">No contacts yet.</p>'; }
+        window.editP = function(k) { const p = pkgs.find(x => x.key === k); if (!p) return;
+            document.getElementById('pkgTitle').value = p.title;
+            document.getElementById('pkgPrice').value = p.price;
+            document.getElementById('pkgImage').value = p.image;
+            document.getElementById('pkgDesc').value = p.desc || '';
+            document.getElementById('addPackageForm').style.display = 'block';
+            document.getElementById('formTitle').textContent = 'Edit Package';
+            document.getElementById('cancelEditBtn').style.display = 'inline-flex';
+            window._ePKey = k; };
+        window.delP = function(k) { if (confirm('Delete this package?')) db.ref('packages/' + k).remove(); };
+        window.editC = function(k) { const ci = cinfo.find(x => x.key === k); if (!ci) return;
+            document.getElementById('contactType').value = ci.type;
+            document.getElementById('contactLabel').value = ci.label;
+            document.getElementById('contactValue').value = ci.value;
+            document.getElementById('contactFormTitle').textContent = 'Edit Contact';
+            document.getElementById('cancelContactBtn').style.display = 'inline-flex';
+            window._eCKey = k; };
+        window.delC = function(k) { if (confirm('Delete this contact?')) db.ref('contactInfo/' + k).remove(); };
+        function toggleSection(id) { const b = document.getElementById('body-' + id),
+                a = document.getElementById('arrow-' + id);
+            b.style.display = b.style.display === 'none' ? 'block' : 'none';
+            a.classList.toggle('rotated'); }
+        window.toggleSection = toggleSection;
+        function showPage(id) {
+            if (id === 'adminDashboard') { const u = auth.currentUser; if (!u || u.uid !== ADMIN_UID) { alert('Access denied. Admin only.'); showPage('loginPage'); return; } }
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            const t = document.getElementById(id); if (t) t.classList.add('active');
+            document.getElementById('navLinks').classList.remove('active');
+            window.scrollTo({ top: 0, behavior: 'auto' });
+            if (id === 'adminDashboard') document.getElementById('inquiryEmail').value = iqEmail;
+            updateNav();
+        }
+        window.showPage = showPage;
+        function updateNav() { const u = auth.currentUser,
+                isAdmin = u && u.uid === ADMIN_UID;
+            document.getElementById('loginNavLink').style.display = isAdmin ? 'none' : 'flex';
+            document.getElementById('dashboardNavLink').style.display = isAdmin ? 'flex' : 'none'; }
+        auth.onAuthStateChanged(u => { updateNav(); if (!u && document.getElementById('adminDashboard').classList.contains('active')) showPage('mainPage'); });
+        db.ref('packages').on('value', s => { pkgs = s.exists() ? Object.keys(s.val()).map(k => ({ key: k, ...s.val()[k] })) : [];
+            rPC();
+            rAP(); });
+        db.ref('contactInfo').on('value', s => { cinfo = s.exists() ? Object.keys(s.val()).map(k => ({ key: k, ...s.val()[k] })) : [];
+            rCI();
+            rAC(); });
+        db.ref('inquiryEmail').on('value', s => { if (s.exists()) { iqEmail = s.val();
+                document.getElementById('inquiryEmail').value = iqEmail; } });
+        db.ref('packages').once('value').then(s => { if (!s.exists()) db.ref('packages').set({ p1: { title: 'Schengen Deluxe', price: '$1,499', image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600', desc: 'Multi-country Europe visa & 7-day guided tour.' }, p2: { title: 'Dubai Golden Visa', price: '$2,200', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600', desc: 'Luxury Dubai package with 5-star accommodation.' }, p3: { title: 'USA Express', price: '$890', image: 'https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=600', desc: 'USA tourist visa + New York City tour.' }, p4: { title: 'Maldives Retreat', price: '$3,100', image: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600', desc: 'Overwater villa, all-inclusive.' }, p5: { title: 'Japan Tour', price: '$2,800', image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600', desc: 'Tokyo & Kyoto cherry blossom tour.' }, p6: { title: 'Australia Holiday', price: '$1,950', image: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600', desc: 'Working holiday visa + Sydney stay.' } }) });
+        db.ref('contactInfo').once('value').then(s => { if (!s.exists()) db.ref('contactInfo').set({ c1: { type: 'email', label: 'Email', value: 'info@gatewaytourism.com', icon: 'fa-envelope' }, c2: { type: 'phone', label: 'Phone', value: '+1 (212) 555-0890', icon: 'fa-phone-alt' }, c3: { type: 'whatsapp', label: 'WhatsApp', value: '+44 7700 900123', icon: 'fa-whatsapp' } }) });
+        db.ref('inquiryEmail').once('value').then(s => { if (!s.exists()) db.ref('inquiryEmail').set('info@gatewaytourism.com') });
+        document.getElementById('saveContactBtn').addEventListener('click', () => { const t = document.getElementById('contactType').value,
+                l = document.getElementById('contactLabel').value.trim(),
+                v = document.getElementById('contactValue').value.trim(); if (!l || !v) { alert('Fill all fields'); return; } const im = { email: 'fa-envelope', phone: 'fa-phone-alt', whatsapp: 'fa-whatsapp' },
+                d = { type: t, label: esc(l), value: esc(v), icon: im[t] }; if (window._eCKey) { db.ref('contactInfo/' + window._eCKey).update(d);
+                window._eCKey = null; } else { db.ref('contactInfo').push(d); }
+            document.getElementById('contactLabel').value = '';
+            document.getElementById('contactValue').value = '';
+            document.getElementById('contactFormTitle').textContent = 'Add Contact';
+            document.getElementById('cancelContactBtn').style.display = 'none'; });
+        document.getElementById('cancelContactBtn').addEventListener('click', () => { document.getElementById('contactLabel').value = '';
+            document.getElementById('contactValue').value = '';
+            document.getElementById('contactFormTitle').textContent = 'Add Contact';
+            document.getElementById('cancelContactBtn').style.display = 'none';
+            window._eCKey = null; });
+        document.getElementById('saveInquiryEmailBtn').addEventListener('click', () => { const e = document.getElementById('inquiryEmail').value.trim(); if (!e || !vEmail(e)) { alert('Enter valid email'); return; } db.ref('inquiryEmail').set(e);
+            document.getElementById('inquiryEmailStatus').textContent = '✅ Saved!';
+            setTimeout(() => document.getElementById('inquiryEmailStatus').textContent = '', 3000); });
+        document.getElementById('showAddPackageForm').addEventListener('click', () => { document.getElementById('pkgTitle').value = '';
+            document.getElementById('pkgPrice').value = '';
+            document.getElementById('pkgImage').value = '';
+            document.getElementById('pkgDesc').value = '';
+            document.getElementById('addPackageForm').style.display = 'block';
+            document.getElementById('formTitle').textContent = 'Add Package';
+            document.getElementById('cancelEditBtn').style.display = 'none';
+            window._ePKey = null; });
+        document.getElementById('cancelEditBtn').addEventListener('click', () => { document.getElementById('addPackageForm').style.display = 'none';
+            window._ePKey = null; });
+        document.getElementById('savePackageBtn').addEventListener('click', () => { const t = document.getElementById('pkgTitle').value.trim(),
+                pr = document.getElementById('pkgPrice').value.trim(),
+                im = document.getElementById('pkgImage').value.trim(),
+                d = document.getElementById('pkgDesc').value.trim(); if (!t || !pr || !im) { alert('Fill required fields'); return; } const data = { title: esc(t), price: esc(pr), image: im, desc: esc(d) }; if (window._ePKey) { db.ref('packages/' + window._ePKey).update(data);
+                window._ePKey = null; } else { db.ref('packages').push(data); }
+            document.getElementById('addPackageForm').style.display = 'none'; });
+        document.getElementById('loginSubmitBtn').addEventListener('click', function(e) { e.preventDefault(); const email = document.getElementById('adminEmail').value.trim(),
+                pw = document.getElementById('adminPassword').value,
+                err = document.getElementById('loginError'),
+                btn = this; if (!email || !pw) { err.textContent = 'Please fill all fields.';
+                err.style.display = 'block'; return; }
+            err.style.display = 'none';
+            btn.disabled = true;
+            btn.innerHTML = '<span class="loading-spinner"></span> Logging in...';
+            auth.signInWithEmailAndPassword(email, pw).then(function(c) { if (c.user.uid !== ADMIN_UID) { auth.signOut();
+                    alert('Access denied. Admin only.');
+                    btn.disabled = false;
+                    btn.innerHTML = 'Access Dashboard'; return; }
+                btn.disabled = false;
+                btn.innerHTML = 'Access Dashboard';
+                document.getElementById('adminEmail').value = '';
+                document.getElementById('adminPassword').value = '';
+                showPage('adminDashboard'); }).catch(function(error) { btn.disabled = false;
+                btn.innerHTML = 'Access Dashboard'; if (error.code === 'auth/user-not-found') { err.textContent = 'No account found with this email.'; } else if (error.code === 'auth/wrong-password') { err.textContent = 'Incorrect password.'; } else { err.textContent = 'Login failed. Check credentials.'; }
+                err.style.display = 'block'; }); });
+        document.getElementById('logoutAdminBtn').addEventListener('click', () => auth.signOut().then(() => showPage('mainPage')));
+        document.getElementById('changePasswordBtn').addEventListener('click', () => { const cp = document.getElementById('currentPassword').value,
+                np = document.getElementById('newPassword').value.trim(),
+                cmp = document.getElementById('confirmNewPassword').value.trim(),
+                st = document.getElementById('passwordStatus'),
+                u = auth.currentUser; if (!u) return; if (!cp) { st.textContent = 'Enter current password'; return; } if (!np || np.length < 6) { st.textContent = 'Min 6 characters'; return; } if (np !== cmp) { st.textContent = 'Passwords do not match'; return; }
+            u.reauthenticateWithCredential(firebase.auth.EmailAuthProvider.credential(u.email, cp)).then(() => u.updatePassword(np)).then(() => { document.getElementById('currentPassword').value = '';
+                document.getElementById('newPassword').value = '';
+                document.getElementById('confirmNewPassword').value = '';
+                st.textContent = '✅ Password updated!';
+                setTimeout(() => st.textContent = '', 3000); }).catch(e => { st.textContent = e.code === 'auth/wrong-password' ? 'Wrong current password' : 'Error: ' + e.message; }); });
+        document.getElementById('contactForm').addEventListener('submit', e => { e.preventDefault(); const n = document.getElementById('contactName').value.trim(),
+                em = document.getElementById('contactEmail').value.trim(),
+                m = document.getElementById('contactMessage').value.trim(); if (!n || !em || !m) return;
+            window.location.href = 'mailto:' + iqEmail + '?subject=Inquiry from ' + encodeURIComponent(n) + '&body=' + encodeURIComponent(n + ' (' + em + '):\n\n' + m);
+            e.target.reset(); });
+        document.getElementById('contactPageForm').addEventListener('submit', e => { e.preventDefault(); const n = document.getElementById('contactPageName').value.trim(),
+                em = document.getElementById('contactPageEmail').value.trim(),
+                m = document.getElementById('contactPageMessage').value.trim(); if (!n || !em || !m) return;
+            window.location.href = 'mailto:' + iqEmail + '?subject=Inquiry from ' + encodeURIComponent(n) + '&body=' + encodeURIComponent(n + ' (' + em + '):\n\n' + m);
+            e.target.reset(); });
+        document.getElementById('hamburger').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('active'));
+        updateNav();
+    </script>
+</body>
+</html>
